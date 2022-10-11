@@ -17,5 +17,5 @@
 ## How to Get Started ##
   1) Go to the "m.inCharge" website.
   2) Click on the 'map' link and search about what you need.
-  3) If you want to send a feedback to the admins (for a damaged charger for example), create an account and fill in the form.
-  4) If you are and admin, you have to create an account with username, email and password provided by the Ministry of      Transport. After that you can add, edit and delete markers (including their data) to the map.
+  3) If you want to send a feedback to the admins (for a damaged charger for example), create an 'user' account and fill in the form.
+  4) If you have 'admin' access, you have to create an account with username, email and password provided by the Ministry of Transport. After that you can add, edit and delete markers (including their data) to the map.
