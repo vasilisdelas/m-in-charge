@@ -7,8 +7,8 @@ const cors = require("cors");
 const port = process.env.PORT || 4000
 //const uri = process.env.MONGODB_URI;
 const markerRoute = require("./routes/markers");
-//const userRoute = require("./routes/users");
-//const adminRoute = require("./routes/admins");
+const userRoute = require("./routes/users");
+const adminRoute = require("./routes/admins");
 
 dotenv.config()
 
@@ -26,8 +26,8 @@ mongoose
   .catch((err) => console.log(err))
 
   app.use('/api/markers', markerRoute)
-//app.use('/api/users', userRoute)
-//app.use('/api/admins', adminRoute)
+  app.use('/api/users', userRoute)
+  app.use('/api/admins', adminRoute)
 
 app.listen(port, () => {
   console.log(`Server is listening on port: ${port}`)
