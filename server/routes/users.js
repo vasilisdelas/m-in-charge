@@ -1,7 +1,55 @@
 const router = require("express").Router();
 const User = require("../models/User");
+const bcrypt = require("bcrypt");
 
-// POST --- Create an user
+// REGISTER ---------------------------------------->
+
+router.post("/register", async (req, res) => {
+  try {
+    // Generate new password
+    const salt = await bcrypt.genSalt(10);
+    const hashedPassword = await bcrypt.hash(req.body.password, salt);
+
+    // Create new user
+    const newUser = new User({
+      username: req.body.username,
+      email: req.body.email,
+      password: hashedPassword,
+    });
+
+    // Save user
+    const user = await newUser.save();
+
+    // Send response
+    res.status(200).json(user.username)
+  } catch(err) {
+    res.status(500).json(err)
+  }
+})
+
+// LOG IN ---------------------------------------->
+
+router.post("/login", async (req, res) => {
+  try {
+    // Find user
+    const user = await User.findOne({ username: req.body.username })
+    !user && res.status(400).json("Wrong username or password!")
+
+    // Validate password
+    const validPassword = await bcrypt.compare(
+      req.body.password,
+      user.password
+    );
+    !validPassword && res.status(400).json("Wrong username or password!")
+
+    // Send response
+    res.status(200).json({ _id: user._id, username: user.username })
+  } catch(err) {
+    res.status(500).json(err)
+  }
+})
+
+// POST --- Create an user -------------------->
 
 router.post('/', async (req, res) => {
  
@@ -14,7 +62,7 @@ router.post('/', async (req, res) => {
   }
 });
 
-// GET --- Get all users
+// GET --- Get all users -------------------->
 
 router.get('/', async (req, res) => {
   try {
@@ -25,7 +73,7 @@ router.get('/', async (req, res) => {
   }
 })
 
-// DELETE --- Delete an user
+// DELETE --- Delete an user -------------------->
 
 router.delete('/:id', async (req, res) => {
   try {
