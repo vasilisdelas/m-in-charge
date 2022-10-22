@@ -1,0 +1,140 @@
+@import '~leaflet/dist/leaflet.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap');
+
+:root {
+    --text-color: #407bdb;
+    --slight-gray: #333;
+    --content-color: #242629;
+    --slight-white: #e6e1e1;
+}
+
+.leaflet-container {
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+
+.leaflet-pane > img {
+    width: 40px !important;
+    height: 40px !important;
+    border: 0 !important;
+}
+
+.leaflet-shadow-pane > img {
+    transform: none !important;
+}
+
+.popup-text {
+    display: flex;
+    flex-direction: column;
+}
+
+span {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.title, .description, .rating, .creator {
+    font-weight: 700;
+    font-size: 1.1rem;
+    background: -webkit-linear-gradient(var(--text-color), var(--slight-gray));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-sizing: content-box;
+    border-top: 0;
+    border-bottom: 2px;
+    padding-bottom: 1.5%;
+    border-right: 0;
+    border-left: 0;
+    border-style: solid;
+    border-image: linear-gradient(to right bottom, var(--text-color), var(--slight-gray));
+    border-image-slice: 1;
+}
+
+.title-content, .description-content, .rating-content, .creator-content {
+    color: var(--content-color);
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.title-content { font-size: 1rem; }
+
+.creator-content {
+    margin-top: 3%;
+}
+
+.popup-text > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.on { color: #f08b26; }
+.off { color: #c2c0be; }
+
+.on, .off {
+    font-size: 1.25rem;
+}
+
+.new-pin-popup {
+    width: 16vw !important;
+}
+
+.title-in, .description-in {
+    padding: 2% !important;
+    display: inline-grid;
+}
+
+.rating-in {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    margin-bottom: -2%;
+}
+
+.star-add:before {
+    color: #c2c0be;
+}
+
+.star-add:hover {
+    color: #f08b26;
+}
+
+.rating-in > button > span:hover ~ span:before {
+    color: #f08b26;
+}
+
+textarea {
+    overflow: hidden;
+    resize: none;
+}
+
+.add-btn, .rem-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5%;
+    border-radius: 5%;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.add-btn { 
+    background-color: #60EF90; 
+    color: var(--slight-gray);
+    margin: 2% 15% 2% 15%;
+}
+.rem-btn { 
+    background-color: #f51b34; 
+    color: var(--slight-white); 
+    margin: 5% 15% 5% 15%;
+}
