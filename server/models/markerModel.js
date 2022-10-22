@@ -8,7 +8,7 @@ const MarkerSchema = new mongoose.Schema(
       min: 3,
       max: 40,
     },
-    description: {
+    desc: {
       type: String,
       required: true,
       min: 5,
@@ -19,11 +19,11 @@ const MarkerSchema = new mongoose.Schema(
       min: 10,
       max: 250,
     },
-    longitude: {
+    lon: {
       type: Number,
       required: true,
     },
-    latitude: {
+    lat: {
       type: Number,
       required: true,
     },
