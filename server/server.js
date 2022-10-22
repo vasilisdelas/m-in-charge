@@ -6,9 +6,9 @@ const cors = require("cors");
 
 const port = process.env.PORT || 4000
 //const uri = process.env.MONGODB_URI;
-const markerRoute = require("./routes/markers");
-const userRoute = require("./routes/users");
-const adminRoute = require("./routes/admins");
+const markerRoute = require("./routes/markerRoute");
+const userRoute = require("./routes/userRoute");
+const adminRoute = require("./routes/adminRoute");
 
 dotenv.config()
 

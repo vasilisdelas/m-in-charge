@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const Admin = require("../models/Admin");
+const Admin = require("../models/adminModel");
 
 // POST --- Create an admin
 

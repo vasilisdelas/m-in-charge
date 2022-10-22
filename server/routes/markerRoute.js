@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const Marker = require("../models/Marker");
+const Marker = require("../models/markerModel");
 
 // POST --- Create a marker
 
