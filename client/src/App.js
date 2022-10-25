@@ -1,9 +1,14 @@
 import './styles/App.css';
 import Map from './components/Map.tsx';
+import Sidebar from './components/Sidebar';
 
 function App() {
   return (
-    <Map />
+    <div className="App">
+      <Map />
+      <Sidebar />
+    </div>
+
   );
 }
 
