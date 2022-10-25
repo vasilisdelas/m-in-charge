@@ -1,19 +1,15 @@
-.App {
-  text-align: center;
-}
-
-body {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+*::after,*::before {
+  box-sizing: border-box;
 }
 
 .leaflet-container {
   width: 90%;
   height: 50vh;
-}
-
-.sidebar {
-  height: 100%;
-  width: 200px;
-  background-color: blueviolet;
 }
