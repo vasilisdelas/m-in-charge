@@ -139,7 +139,8 @@ export default function SidebarLink(props) {
                     </div>
                     { props.showIcons &&
                     <div className={ borderLeft }>
-                        <Link to='/github'>Github</Link>
+                        <a href="https://github.com/vasilisdelas/m-in-charge">GitHub</a>
+                        {/*<Link to='/github'>Github</Link>*/}
                     </div>
                     }
                 </div> 
