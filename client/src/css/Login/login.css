@@ -1,0 +1,205 @@
+:root {
+    --login-main: #121212;
+    --login-text-color: white;
+    --secondary: #333332;
+}
+
+/*
+
+    Form
+
+*/
+
+.login-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, var(--login-main) 70.2%);*/
+    background-color: var(--login-main);
+}
+
+.login-form-container {
+    background-color: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    width: 40%;
+    border-radius: 14px;
+}
+
+.form-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: -2.5% 12.5% 2.5% 12.5%;
+}
+
+.form-credentials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.form-credentials > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-text {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--login-text-color);
+    padding: 0;
+    margin: 0;
+    padding: 0 100% 10% 100%;
+    border-bottom: 4px solid var(--login-main);
+}
+
+.form-username, .form-password { width: 100%; }
+
+.form-username > label, .form-password > label {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--login-text-color);
+}
+
+input { 
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* 
+
+    Login Btn
+
+*/
+
+.login-btn-section {
+    width: 100%;
+    margin-top: 3%;
+}
+
+.login-btn {
+    width: 40%;
+    color: white;
+    padding: 16px 32px;
+    border-radius: 4px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #38d39f !important;
+    box-shadow: 2px 2px 7px #38d39f70;
+    color: #f0f0f0;
+    background-color: var(--login-main);
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+/*
+
+    Error area & go to register
+
+*/
+
+.error-txt {
+    color: #d12828;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0 10% 0 10%; 
+}
+
+.no-user {
+    margin-top: 5%;
+    font-size: 1.05rem;
+    font-weight: 500;
+    padding: 0 10% 0 10%;
+}
+
+.no-user-redirect, .no-user-redirect:hover, .no-user-redirect:visited, .no-user-redirect:link {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--login-main);
+}
+
+/*
+
+    Responsiveness
+
+*/
+
+@media screen and (max-width: 1280px) {
+    .login-form-container {
+        width: 45%;
+    }
+
+
+    span, a {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .login-form-container {
+        width: 60%;
+    }
+
+    .branding-text {
+        font-size: 1.7rem !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .login-form-container {
+        width: 70%;
+    }
+
+    span, a {
+        font-size: 1rem;
+    }
+
+    .branding-text {
+        font-size: 1.7rem !important;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .login-form-container {
+        width: 80%;
+    }
+
+    .branding-text {
+        font-size: 1.6rem !important;
+    }
+}
+
+@media screen and (max-width: 512px) {
+    .login-form-container {
+        width: 90%;
+    }
+
+    .header {
+        width: 30%;
+    }
+
+    .branding-text {
+        font-size: 1.5rem !important;
+    }
+
+    span, a {
+        font-size: 0.9rem;
+    }
+}

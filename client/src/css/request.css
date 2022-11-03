@@ -1,0 +1,41 @@
+.requests, .remove-container  {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+}
+
+.req {
+    border: 3px solid red;
+    margin: 0.5% 2% 0.5% 2%;
+    height: 6vh;
+    border-radius: 16px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.req > span {
+    flex: 0 0 19%;
+}
+
+.req-btns {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 4%;
+    padding-left: 0.5%;
+}
+
+.req-btns > button {
+    border-radius: 8px;
+}
+
+.a { background-color: #22bb33; }
+.d { background-color: #bb2124; }
+
+.a, .d {
+    color: #ededed;
+}

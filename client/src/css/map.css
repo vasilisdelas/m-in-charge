@@ -7,6 +7,8 @@
     --slight-gray: #333;
     --content-color: #242629;
     --slight-white: #e6e1e1;
+    --api-marker-color: #E55B13;
+    --db-marker-color: #242121;
 }
 
 .leaflet-container {
@@ -15,12 +17,19 @@
     z-index: 1;
 }
 
+/*
+    Στυλάρισμα του marker
+*/
+
 .leaflet-pane > img {
     width: 40px !important;
     height: 40px !important;
     border: 0 !important;
 }
 
+/* 
+    Διαγράφει το πλαίσιο γύρω απτά markers
+*/
 .leaflet-shadow-pane > img {
     transform: none !important;
 }
@@ -82,6 +91,13 @@ button {
     font-size: 1.25rem;
 }
 
+
+/*
+
+    New Pin Section
+
+*/
+
 .new-pin-popup {
     width: 16vw !important;
 }
@@ -110,6 +126,10 @@ button {
 .rating-in > button > span:hover ~ span:before {
     color: #f08b26;
 }
+/* 
+.star-add:hover ~ .star-add:before {
+    color: #f08b26;
+} */
 
 textarea {
     overflow: hidden;
@@ -133,8 +153,42 @@ textarea {
     color: var(--slight-gray);
     margin: 2% 15% 2% 15%;
 }
+
+.request-add-btn {
+    background-color: #e86025;
+    margin: 5% 15% 5% 15%;
+    color: var(--slight-white); 
+    font-weight: 600;
+    text-align: center;
+}
+
+
 .rem-btn { 
     background-color: #f51b34; 
     color: var(--slight-white); 
     margin: 5% 15% 5% 15%;
+}
+
+.request-rem-btn {
+    background-color: #e86025;
+    color: var(--slight-white); 
+    font-weight: 600;
+    margin: 5% 15% 5% 15%;
+    text-align: center;
+}
+
+.creator-content {
+    text-align: center;
+}
+
+.api-marker {
+    color: var(--text-color);
+}
+
+.db-marker {
+    color: var(--db-marker-color);
+}
+
+.draft-marker {
+    color: var(--db-marker-color);
 }

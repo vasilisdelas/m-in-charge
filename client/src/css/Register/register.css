@@ -1,0 +1,196 @@
+:root {
+    --register-main: #121212;
+    --register-text-color: white;
+    --secondary: #333332;
+}
+
+/*
+
+    Form
+
+*/
+
+.register-container {
+    height: 100vh;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--register-main);
+}
+
+.register-form-container {
+    background-color: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 77.5%;
+    width: 40%;
+    border-radius: 14px;
+}
+
+.form-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: -2.5% 12.5% 2.5% 12.5%;
+}
+
+.form-credentials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.form-credentials > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-text {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--register-text-color);
+    border-bottom: 4px solid var(--login-main);
+}
+
+.register-description { 
+    font-size: 1rem;
+    padding: 2%;
+    font-weight: 500;
+    color: var(--login-main);
+}
+
+.form-username, .form-password, .form-email { width: 100%; }
+
+.form-username > label, .form-password > label, .form-email > label {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--register-text-color);
+}
+
+input { 
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.register-btn-section {
+    width: 100%;
+    margin-top: 3%;
+}
+
+/* 
+
+    Register Btn
+
+*/
+
+.register-btn {
+    width: 40%;
+    color: white;
+    padding: 16px 32px;
+    border-radius: 4px;
+    margin: 4px 2px;
+    cursor: pointer;
+    color: #f0f0f0;
+    background-color: var(--login-main);
+    font-weight: 500;
+    font-size: 1.25rem;
+    background-color: #38d39f !important;
+    box-shadow: 2px 2px 7px #38d39f70;
+}
+
+/*
+
+    Error area & go to login
+
+*/
+
+.error-txt {
+    color: #d12828;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0 16% 0 16%; 
+}
+
+.no-user {
+    margin-top: 5%;
+    font-size: 1.05rem;
+    font-weight: 500;
+    padding: 0 10% 0 10%;
+    color: var(--register-text-color);
+}
+
+.no-user-redirect, .no-user-redirect:hover, .no-user-redirect:visited, .no-user-redirect:link {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--register-text-color)
+}
+
+/*
+
+    Responsiveness
+
+*/
+
+@media screen and (max-width: 1280px) {
+    .register-form-container {
+        width: 50%;
+    }
+
+    .register-text {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .register-form-container {
+        width: 60%;
+    }
+
+    .register-text {
+        font-size: 1.9rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .register-form-container {
+        width: 80%;
+    }
+
+    .register-text {
+        font-size: 1.9rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .register-form-container {
+        width: 85%;
+    }
+
+    .register-text {
+        font-size: 1.9rem;
+    }
+}
+
+@media screen and (max-width: 512px) {
+    .register-form-container {
+        width: 90%;
+    }
+
+    .register-text {
+        font-size: 1.9rem;
+    }
+}
