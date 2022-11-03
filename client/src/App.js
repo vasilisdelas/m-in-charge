@@ -1,15 +1,11 @@
-import './styles/App.css';
-import Map from './components/Map.tsx';
-import Sidebar from './components/Sidebar';
+import Map from './components/map.js';
+
+import './css/main.css';
 
 function App() {
-  return (
-    <div className="App">
-      <Map />
-      <Sidebar />
-    </div>
-
-  );
+    return (
+        <Map />
+    );
 }
 
 export default App;
