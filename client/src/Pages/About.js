@@ -11,13 +11,13 @@ function About() {
                     Welcome to m.inCharge app !
                 </div>
                 <div className="about-text">
-                The m.inCharge app provides all the necessary information about the available and ready to use charging stations for electric vehicles in Greek area. 
-                As ‘visitor’ you can see all the installed and ready to use charging stations.
-                As ‘user’ you can also send alerts to the admins, if you find any dysfunctional charger or anything that can be considered as a problem.
-                The ‘admins’ are on duty 24/7 for ensuring the optimal functionality of the app.
+                The <i>m.inCharge</i> app provides all the necessary information about the available and ready to use charging stations for electric vehicles in Greek area. 
+                <br/>As ‘visitor’ you can see all the installed and ready to use charging stations.
+                <br/>As ‘user’ you can also send alerts to the admins, if you find any dysfunctional charger or anything that can be considered as a problem. <br />
+                <br/>The ‘admins’ are on duty 24/7 for ensuring the optimal functionality of the app.
                 <br></br>
                 <br></br>
-                A map that is in charge for your EV ! 
+                <i>A map...in charge for your EV !</i> 
                 </div>
             </div>
         </div>
