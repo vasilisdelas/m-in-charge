@@ -1,7 +1,7 @@
 :root {
     --login-main: #121212;
-    --login-text-color: white;
-    --secondary: #333332;
+    --login-text-color: rgb(160, 160, 160);
+    --secondary: #606060;
 }
 
 /*
@@ -21,14 +21,14 @@
 }
 
 .login-form-container {
-    background-color: var(--secondary);
+    background-color: #3e3e3e;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 70%;
-    width: 40%;
-    border-radius: 14px;
+    height: 60%;
+    width: 30%;
+    border-radius: 10px;
 }
 
 .form-text {
@@ -58,7 +58,7 @@
 .login-text {
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(--login-text-color);
+    color: #38d39f;
     padding: 0;
     margin: 0;
     padding: 0 100% 10% 100%;
@@ -68,7 +68,7 @@
 .form-username, .form-password { width: 100%; }
 
 .form-username > label, .form-password > label {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 500;
     color: var(--login-text-color);
 }

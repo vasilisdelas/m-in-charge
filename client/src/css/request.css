@@ -7,10 +7,10 @@
 }
 
 .req {
-    border: 3px solid red;
-    margin: 0.5% 2% 0.5% 2%;
+    border: 3px solid rgb(190, 27, 27);
+    margin: 1% 2% 1% 2%;
     height: 6vh;
-    border-radius: 16px;
+    border-radius: 8px;
     text-align: center;
     align-items: center;
     display: flex;
@@ -30,7 +30,8 @@
 }
 
 .req-btns > button {
-    border-radius: 8px;
+    border-radius: 4px;
+    margin: 5px;
 }
 
 .a { background-color: #22bb33; }

@@ -1,10 +1,10 @@
 :root {
-    --header-bg: #121212;
+    --header-bg: rgb(32,33,36);
     --branding-text-color: #FFD700;
     --user-text-color: #C41E3A;
     --logout-color: #b23b3b;
     --white-two: #f0f0f0;
-    --signup-color: #47cf73;
+    --signup-color: #349854;
     --icon-color: #dedcdc;
     --admin-bg: #C41E3A;
     --default-bg: #1e6bd6;
@@ -15,7 +15,7 @@
 .header {
     background-color: var(--header-bg);
     display: flex;
-    opacity: 0.95;
+    opacity: 0.9;
     flex-direction: column;
     padding: 0.2%;
 }
@@ -49,15 +49,15 @@
 }
 
 .sidebar-link:hover {
-    opacity: 0.75;
-    background-color: #171f26;
+    opacity: 0.8;
+    background-color: #4ca472;
     border-radius: 12px;
 }
 
 .user-text {
     color: var(--sidebar-text);
     font-size: var(--header-text-size);
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .user-btn-section {
@@ -80,7 +80,7 @@
     border: none;
     color: white;
     padding: 6px 18px;
-    border-radius: 6px;
+    border-radius: 4px;
     text-align: center;
     text-decoration: none;
     font-size: calc(var(--header-text-size) / 1.8);
@@ -116,12 +116,12 @@
 
 .branding:first-child { 
     border-bottom: 8px solid #202020;
-    border-radius: 8px;
+    border-radius: 4px;
 }
 
 .icon {
     color: var(--icon-color);
-    margin: 10% 0 10% 0;
+    margin: 8% 0 8% 0;
     flex: 0 0 35%;
     display: flex;
     align-items: center;
@@ -134,24 +134,24 @@ a {
 }
 
 .sidebar-text {
-    margin: 10% 0 10% 0;
+    margin: 6% 0 6% 0;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     font-size: 1.1rem;
-    font-weight: 600;
-    padding-left: 7.5%;
+    font-weight: 500;
+    padding-left: 7%;
 }
 
 .border-left { border-left: 5px solid #36454F; }
 
 .role {
     padding: 2.5% 6% 2.5% 6%;
-    border-radius: 6px;
+    border-radius: 4px;
     margin: 1%;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .user-role {
@@ -246,13 +246,13 @@ a {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 0.75rem;
+        font-size: 0.6rem;
     }
     .small-sidebar > a > .sidebar-link {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     .small-sidebar {
         flex: 0 0 5% !important;
