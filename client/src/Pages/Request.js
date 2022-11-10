@@ -88,6 +88,7 @@ function Request() {
 
     return (
        <div className="requests">
+        <h1>Requests for New Chargers</h1>
         { requests.map((req, index) =>
             <div className="req">
                 <span> { req.username } </span>

@@ -1,0 +1,3 @@
+mongodb1
+37.984132, 23.727957
+mongodb+srv://vasilisdelas:mongodb1@cluster0.tfboe5n.mongodb.net/?retryWrites=true&w=majority

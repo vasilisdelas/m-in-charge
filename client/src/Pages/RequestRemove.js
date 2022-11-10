@@ -77,9 +77,11 @@ export default function RequestRemove() {
     }
 
     let navigate = useNavigate();
+    
     if (pinsToRemove.length > 0) {
         return (
             <div className="remove-container">
+            <h1>Requests for Dysfunctional Chargers</h1>
             {
                 pinsToRemove.map((marker, index) =>
                 <>
